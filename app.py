@@ -11,7 +11,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# ---------------- CYBERPUNK HUD STYLE ----------------
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@500;600;700&display=swap');
@@ -34,16 +33,10 @@ st.markdown("""
         max-width: 1200px;
     }
 
-<<<<<<< HEAD
-    /* HEADER */
-=======
-    /* Top App Bar */
->>>>>>> a859dbd427f4e0a1486d3cb90c6bacbea3ada9c2
     .app-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-<<<<<<< HEAD
         padding: 1rem 1.5rem;
         border: 1px solid rgba(0, 255, 200, 0.3);
         margin-bottom: 2rem;
@@ -97,45 +90,10 @@ st.markdown("""
         letter-spacing: 0.03em;
     }
 
-    /* METRIC GRID - HUD readouts */
-=======
-        padding-bottom: 1.25rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        margin-bottom: 1.75rem;
-    }
-    .brand-title {
-        font-size: 1.35rem;
-        font-weight: 700;
-        letter-spacing: -0.02em;
-        color: #FFFFFF;
-        display: flex;
-        align-items: center;
-        gap: 0.6rem;
-    }
-    .brand-badge {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.7rem;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        background: rgba(99, 102, 241, 0.15);
-        border: 1px solid rgba(99, 102, 241, 0.4);
-        color: #818CF8;
-        padding: 0.2rem 0.55rem;
-        border-radius: 9999px;
-    }
-    .app-subtitle {
-        color: #94A3B8;
-        font-size: 0.875rem;
-        margin-top: 0.2rem;
-    }
-
-    /* Operational Metric Cards */
->>>>>>> a859dbd427f4e0a1486d3cb90c6bacbea3ada9c2
     .metric-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
-<<<<<<< HEAD
         margin-bottom: 2.5rem;
     }
     .metric-box {
@@ -161,7 +119,6 @@ st.markdown("""
         text-shadow: 0 0 8px rgba(0, 255, 200, 0.3);
     }
 
-    /* SECTION TITLES */
     .section-title {
         font-family: 'Share Tech Mono', monospace;
         font-size: 0.8rem;
@@ -178,7 +135,6 @@ st.markdown("""
         color: #FF2E9F;
     }
 
-    /* RESULT CARD - Terminal readout */
     .result-container {
         background: #030405;
         border: 1px solid #00FFC8;
@@ -213,74 +169,10 @@ st.markdown("""
         margin-left: 0.4rem;
     }
 
-    /* FACTOR PILLS - terminal tags */
-=======
-        margin-bottom: 2rem;
-    }
-    .metric-box {
-        background: rgba(30, 41, 59, 0.4);
-        border: 1px solid rgba(255, 255, 255, 0.06);
-        border-radius: 10px;
-        padding: 1rem 1.2rem;
-    }
-    .metric-label {
-        font-size: 0.725rem;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: #64748B;
-        font-weight: 600;
-    }
-    .metric-val {
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: #F8FAFC;
-        margin-top: 0.25rem;
-        font-family: 'JetBrains Mono', monospace;
-    }
-
-    /* Section Header */
-    .section-title {
-        font-size: 0.95rem;
-        font-weight: 600;
-        color: #CBD5E1;
-        letter-spacing: -0.01em;
-        margin-bottom: 1.2rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    /* ETA Result Card */
-    .result-container {
-        background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.8) 100%);
-        border: 1px solid rgba(99, 102, 241, 0.25);
-        border-radius: 12px;
-        padding: 1.75rem;
-        margin-top: 1.5rem;
-    }
-    .eta-display {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 3.2rem;
-        font-weight: 700;
-        letter-spacing: -0.03em;
-        color: #38BDF8;
-        line-height: 1;
-    }
-    .eta-unit {
-        font-size: 1.2rem;
-        color: #94A3B8;
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        margin-left: 0.3rem;
-    }
-
-    /* Breakdown Pill */
->>>>>>> a859dbd427f4e0a1486d3cb90c6bacbea3ada9c2
     .factor-pill {
         display: inline-flex;
         align-items: center;
         gap: 0.4rem;
-<<<<<<< HEAD
         background: transparent;
         border: 1px solid rgba(0, 255, 200, 0.25);
         padding: 0.45rem 0.8rem;
@@ -290,7 +182,6 @@ st.markdown("""
     }
     .factor-pill b { color: #00FFC8; }
 
-    /* BUTTON - HUD activate */
     div.stButton > button {
         background: transparent !important;
         color: #00FFC8 !important;
@@ -311,12 +202,10 @@ st.markdown("""
         box-shadow: 0 0 25px rgba(0, 255, 200, 0.7) !important;
     }
 
-    /* Sliders neon */
     .stSlider [data-baseweb="slider"] > div > div {
         background: #FF2E9F !important;
     }
 
-    /* Selectbox terminal look */
     [data-baseweb="select"] > div {
         background: rgba(0, 255, 200, 0.02) !important;
         border: 1px solid rgba(0, 255, 200, 0.25) !important;
@@ -328,57 +217,22 @@ st.markdown("""
         font-family: 'Share Tech Mono', monospace !important;
         color: #8FBDB8 !important;
         font-size: 0.8rem !important;
-=======
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 6px;
-        padding: 0.4rem 0.75rem;
-        font-size: 0.8rem;
-        color: #CBD5E1;
-        font-family: 'JetBrains Mono', monospace;
-    }
-
-    /* Button Styling */
-    div.stButton > button {
-        background: #4F46E5 !important;
-        color: #FFFFFF !important;
-        font-weight: 600 !important;
-        border-radius: 8px !important;
-        border: none !important;
-        padding: 0.65rem 1.5rem !important;
-        width: 100% !important;
-        font-size: 0.95rem !important;
-        letter-spacing: 0.01em !important;
-        transition: all 0.15s ease-in-out !important;
-    }
-    div.stButton > button:hover {
-        background: #4338CA !important;
-        box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35) !important;
->>>>>>> a859dbd427f4e0a1486d3cb90c6bacbea3ada9c2
     }
 </style>
 
 <div class="app-header">
     <div>
         <div class="brand-title">
-<<<<<<< HEAD
             ⚡ FLEETPULSE_ENGINE
             <span class="brand-badge">XGBoost_v2.4</span>
         </div>
         <div class="app-subtitle">> DYNAMIC_DOORSTEP_ETA_&_ROUTE_LATENCY_PREDICTION_SYSTEM_</div>
-=======
-            FleetPulse Engine
-            <span class="brand-badge">XGBoost v2.4</span>
-        </div>
-        <div class="app-subtitle">Dynamic Doorstep Delivery ETA & Route Latency Prediction System</div>
->>>>>>> a859dbd427f4e0a1486d3cb90c6bacbea3ada9c2
     </div>
 </div>
 
 <div class="metric-grid">
     <div class="metric-box">
         <div class="metric-label">Model Accuracy</div>
-<<<<<<< HEAD
         <div class="metric-val">94.2%</div>
     </div>
     <div class="metric-box">
@@ -392,21 +246,6 @@ st.markdown("""
     <div class="metric-box">
         <div class="metric-label">Inference Latency</div>
         <div class="metric-val">12 ms</div>
-=======
-        <div class="metric-val">94.2% <span style="font-size:0.8rem; color:#10B981;">R²</span></div>
-    </div>
-    <div class="metric-box">
-        <div class="metric-label">Mean Error Margin</div>
-        <div class="metric-val">±1.8 <span style="font-size:0.8rem; color:#94A3B8;">mins</span></div>
-    </div>
-    <div class="metric-box">
-        <div class="metric-label">Training Base</div>
-        <div class="metric-val">15,000 <span style="font-size:0.8rem; color:#94A3B8;">orders</span></div>
-    </div>
-    <div class="metric-box">
-        <div class="metric-label">Inference Latency</div>
-        <div class="metric-val">12 <span style="font-size:0.8rem; color:#38BDF8;">ms</span></div>
->>>>>>> a859dbd427f4e0a1486d3cb90c6bacbea3ada9c2
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -424,21 +263,13 @@ except Exception as e:
     st.error(f"Inference pipeline offline: {e}")
     model_loaded = False
 
-<<<<<<< HEAD
-=======
-# Layout Form
->>>>>>> a859dbd427f4e0a1486d3cb90c6bacbea3ada9c2
 col1, col_sep, col2 = st.columns([1, 0.08, 1])
 
 with col1:
     st.markdown('<div class="section-title">Order & Transit Parameters</div>', unsafe_allow_html=True)
     distance_km = st.slider("Radial Delivery Distance (km)", min_value=0.8, max_value=22.0, value=5.2, step=0.1)
     prep_time_min = st.select_slider("Kitchen Preparation Duration (mins)", options=[10, 15, 20, 25, 30, 35], value=15)
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> a859dbd427f4e0a1486d3cb90c6bacbea3ada9c2
     subcol_a, subcol_b = st.columns(2)
     with subcol_a:
         items_count = st.number_input("Basket Size (Units)", min_value=1, max_value=12, value=3)
@@ -447,17 +278,10 @@ with col1:
 
 with col2:
     st.markdown('<div class="section-title">Route & Ambient Telemetry</div>', unsafe_allow_html=True)
-<<<<<<< HEAD
 
     traffic = st.selectbox("Congestion Density", ["Low", "Medium", "High", "Jam"], index=1)
     weather = st.selectbox("Atmospheric Conditions", ["Clear", "Windy", "Foggy", "Rainy", "Heavy Storm"], index=0)
 
-=======
-    
-    traffic = st.selectbox("Congestion Density", ["Low", "Medium", "High", "Jam"], index=1)
-    weather = st.selectbox("Atmospheric Conditions", ["Clear", "Windy", "Foggy", "Rainy", "Heavy Storm"], index=0)
-    
->>>>>>> a859dbd427f4e0a1486d3cb90c6bacbea3ada9c2
     subcol_c, subcol_d = st.columns(2)
     with subcol_c:
         time_of_day = st.selectbox("Dispatch Window", ["Morning", "Afternoon", "Evening Peak", "Late Night"], index=2)
@@ -465,11 +289,7 @@ with col2:
         vehicle_type = st.selectbox("Fleet Vehicle", ["Motorcycle", "Scooter", "Electric Bike"], index=0)
 
 st.write("")
-<<<<<<< HEAD
 predict_clicked = st.button("▶ EXECUTE ETA FORECAST", use_container_width=True)
-=======
-predict_clicked = st.button("Generate Dynamic ETA Forecast", use_container_width=True)
->>>>>>> a859dbd427f4e0a1486d3cb90c6bacbea3ada9c2
 
 if predict_clicked and model_loaded:
     load_ratio = round(items_count / distance_km, 2)
@@ -492,28 +312,17 @@ if predict_clicked and model_loaded:
     total_eta = int(round(predicted_val))
     transit_eta = max(total_eta - prep_time_min, 1)
 
-<<<<<<< HEAD
     if total_eta <= 30:
         sla_badge = '<span style="color:#00FFC8; font-family:\'Share Tech Mono\', monospace; text-shadow:0 0 8px rgba(0,255,200,0.6);">[ FAST-TRACK_SLA ]</span>'
     elif total_eta <= 45:
         sla_badge = '<span style="color:#38BDF8; font-family:\'Share Tech Mono\', monospace; text-shadow:0 0 8px rgba(56,189,248,0.6);">[ STANDARD_SLA ]</span>'
     else:
         sla_badge = '<span style="color:#FF2E9F; font-family:\'Share Tech Mono\', monospace; text-shadow:0 0 8px rgba(255,46,159,0.6);">[ CONGESTION_DELAY ]</span>'
-=======
-    # Status SLA check
-    if total_eta <= 30:
-        sla_badge = '<span style="color:#10B981; font-weight:600;">● FAST-TRACK SLA</span>'
-    elif total_eta <= 45:
-        sla_badge = '<span style="color:#38BDF8; font-weight:600;">● STANDARD SLA</span>'
-    else:
-        sla_badge = '<span style="color:#F59E0B; font-weight:600;">● CONGESTION DELAY SLA</span>'
->>>>>>> a859dbd427f4e0a1486d3cb90c6bacbea3ada9c2
 
     st.markdown(f"""
     <div class="result-container">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
             <div>
-<<<<<<< HEAD
                 <div style="font-size:0.7rem; text-transform:uppercase; color:#5A7A78; font-family:'Share Tech Mono', monospace; letter-spacing:0.1em;">Calculated_Delivery_Estimate</div>
                 <div class="eta-display">{total_eta}<span class="eta-unit">min</span></div>
             </div>
@@ -525,21 +334,6 @@ if predict_clicked and model_loaded:
             <div class="factor-pill">RADIAL: <b>{distance_km}km</b></div>
             <div class="factor-pill">TRAFFIC: <b>{traffic}</b></div>
             <div class="factor-pill">WEATHER: <b>{weather}</b></div>
-=======
-                <div style="font-size:0.75rem; text-transform:uppercase; color:#94A3B8; font-weight:600; letter-spacing:0.05em;">Calculated Delivery Estimate</div>
-                <div class="eta-display">{total_eta}<span class="eta-unit">mins</span></div>
-            </div>
-            <div>
-                {sla_badge}
-            </div>
-        </div>
-        <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:1.25rem; border-top:1px solid rgba(255,255,255,0.06); padding-top:1rem;">
-            <div class="factor-pill">🍳 Prep: <b>{prep_time_min}m</b></div>
-            <div class="factor-pill">🛵 Transit: <b>{transit_eta}m</b></div>
-            <div class="factor-pill">📍 Radial: <b>{distance_km}km</b></div>
-            <div class="factor-pill">🚦 Traffic: <b>{traffic}</b></div>
-            <div class="factor-pill">🌧️ Weather: <b>{weather}</b></div>
->>>>>>> a859dbd427f4e0a1486d3cb90c6bacbea3ada9c2
         </div>
     </div>
     """, unsafe_allow_html=True)
